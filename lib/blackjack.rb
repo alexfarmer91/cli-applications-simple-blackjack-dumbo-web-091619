@@ -30,7 +30,8 @@ def initial_round
 end
 
 def invalid_command
-  print "Please enter a valid command"
+  puts "Please enter a valid command"
+  prompt_user
   get_user_input
 end
 
