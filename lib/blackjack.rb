@@ -34,20 +34,14 @@ def invalid_command
   prompt_user
 end
 
-def hit?(card_total)
-  
+def hit?(current_total)
   prompt_user
-  user_key = get_user_input
-  
-  if user_key == 'h'
-    card_total += deal_card
-  else if user_key == 's'
-    card_total
-  else 
-    invalid_command
+  input = get_user_input
+  if input == "h"
+    current_total += deal_card
+  elsif input == "s"
+    return current_total
   end
-    
-end
  
 end
 
