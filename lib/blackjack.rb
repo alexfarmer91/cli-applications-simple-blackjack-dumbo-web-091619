@@ -31,7 +31,6 @@ end
 
 def invalid_command
   puts "Please enter a valid command"
-  prompt_user
 end
 
 def hit?(current_total)
@@ -43,6 +42,7 @@ def hit?(current_total)
     return current_total
   else 
     invalid_command
+    prompt_user
     get_user_input
   end
  
