@@ -30,8 +30,8 @@ def initial_round
 end
 
 def invalid_command
-  prompt_user
   puts "Please enter a valid command"
+  prompt_user
 end
 
 def hit?(current_total)
