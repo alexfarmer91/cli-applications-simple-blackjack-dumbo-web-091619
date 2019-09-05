@@ -37,10 +37,12 @@ end
 def hit?(card_total)
   
   prompt_user
-  if get_user_input == 'h'
+  user_key = get_user_input
+  
+  if user_key == 'h'
     card_total += deal_card
-  else if get_user_input == 's'
-    puts "Stay"
+  else if user_key == 's'
+    card_total
   else 
     invalid_command
   end
